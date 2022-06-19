@@ -12,33 +12,37 @@ class sendRecWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Column(children: [
-              Image.asset(
-                'assets/images/gallery.png',
-                height: 50,
+            Column(children: const [
+              Icon(
+                Icons.qr_code_scanner,
+                size: 50,
+                color: Colors.white,
               ),
-              const Text('Scan')
+              Text('Scan')
             ]),
-            Column(children: [
-              Image.asset(
-                'assets/images/gallery.png',
-                height: 50,
+            Column(children: const [
+              Icon(
+                Icons.account_balance_wallet,
+                size: 50,
+                color: Colors.white,
               ),
-              const Text('Top up')
+              Text('Top up')
             ]),
-            Column(children: [
-              Image.asset(
-                'assets/images/gallery.png',
-                height: 50,
+            Column(children: const [
+              Icon(
+                Icons.send,
+                size: 50,
+                color: Colors.white,
               ),
-              const Text('Send')
+              Text('Send')
             ]),
-            Column(children: [
-              Image.asset(
-                'assets/images/gallery.png',
-                height: 50,
+            Column(children: const [
+              Icon(
+                Icons.reply,
+                size: 50,
+                color: Colors.white,
               ),
-              const Text('Request')
+              Text('Request')
             ])
           ],
         ));

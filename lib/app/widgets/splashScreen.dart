@@ -10,7 +10,6 @@ class NadaSplashScreen extends StatefulWidget {
 class _NadaSplashScreenState extends State<NadaSplashScreen> {
   @override
   void initState() {
-    //go to home screen after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
     });
@@ -51,7 +50,7 @@ class _NadaSplashScreenState extends State<NadaSplashScreen> {
                   child: Container(
                       margin: const EdgeInsets.only(
                           bottom: 20, left: 10, right: 10),
-                      child: Text(
+                      child: const Text(
                         'NADA Indonesia terdaftar dan diawasi oleh Bank Indonesia dan Kominfo',
                         style: TextStyle(color: Colors.white, fontSize: 13),
                         textAlign: TextAlign.justify,

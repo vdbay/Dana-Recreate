@@ -18,6 +18,7 @@ class customAppBar extends StatefulWidget implements PreferredSizeWidget {
 class _customAppBarState extends State<customAppBar> {
   @override
   Widget build(BuildContext context) {
+    const appBarHeight = kToolbarHeight;
     return AppBar(
       elevation: 0,
       title: Row(
@@ -28,33 +29,39 @@ class _customAppBarState extends State<customAppBar> {
               const TextSpan(
                 text: 'Rp ',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 18,
                   color: Colors.white,
                 ),
               ),
               TextSpan(
                   text: widget.saldo,
                   style: const TextStyle(
-                    fontSize: 18,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   )),
             ],
           )),
-          //image with height of appbar height
-          Image.asset('assets/images/gallery.png', height: kToolbarHeight),
+          Container(
+              margin: const EdgeInsets.only(left: 10),
+              child: const Icon(
+                Icons.add_card,
+                size: appBarHeight * 0.5,
+              )),
           Expanded(
               child: Container(
             alignment: Alignment.centerRight,
-            child: Image.asset('assets/images/gallery.png',
-                height: kToolbarHeight),
+            child: const Icon(
+              Icons.mark_chat_unread,
+              size: appBarHeight * 0.5,
+            ),
           )),
         ],
       ),
       backgroundColor: widget.backgroundColor,
-      //image on leading
-      leading: Image.asset(
-        'assets/images/gallery.png',
+      leading: const Icon(
+        Icons.android,
+        size: appBarHeight * 0.5,
       ),
     );
   }
