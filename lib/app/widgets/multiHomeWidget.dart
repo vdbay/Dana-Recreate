@@ -6,14 +6,13 @@ class multiHomeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mqSize = MediaQuery.of(context).size;
-    return Column(
-      children: const [
-        pulsaDataWidget(),
-        pulsaDataWidget(),
-        pulsaDataWidget(),
-        pulsaDataWidget(),
-      ],
-    );
+    return Column(children: const [
+      pulsaDataWidget(),
+      pulsaDataWidget(),
+      pulsaDataWidget(),
+      pulsaDataWidget(),
+      pulsaDataWidget(),
+      pulsaDataWidget(),
+    ]);
   }
 }

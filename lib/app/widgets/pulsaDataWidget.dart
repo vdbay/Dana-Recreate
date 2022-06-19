@@ -19,8 +19,8 @@ class pulsaDataWidget extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Container(
-          width: mqSize.width * 0.95,
           height: 100,
+          width: mqSize.width * 0.95,
           child: const Center(child: Text('Pulsa')),
         ),
       ),

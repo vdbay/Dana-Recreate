@@ -10,19 +10,16 @@ class NadaHomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: const customAppBar(
           saldo: '2.726', backgroundColor: Color(0xFFFBC02D)),
-      body: Stack(
-        alignment: Alignment.topCenter,
-        children: [
-          Container(
-            color: Colors.white,
-          ),
-          const sendRecWidget(),
-          const Positioned(
-            top: 100,
-            child: multiHomeWidget(),
-          ),
-        ],
-      ),
+      body: ListView(scrollDirection: Axis.vertical, children: [
+        Stack(
+          alignment: AlignmentDirectional.topCenter,
+          children: [
+            Container(height: double.maxFinite, color: Colors.white),
+            const sendRecWidget(),
+            const Positioned.fill(top: 120, child: multiHomeWidget()),
+          ],
+        )
+      ]),
     );
   }
 }
