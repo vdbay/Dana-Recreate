@@ -15,9 +15,9 @@ class NadaHomeScreen extends StatelessWidget {
         Stack(
           alignment: AlignmentDirectional.topCenter,
           children: [
-            Container(height: 900, color: Colors.white),
+            Container(height: 2000, color: Colors.white),
             const sendRecWidget(),
-            const Positioned.fill(top: 120, child: multiHomeWidget()),
+            const Positioned.fill(top: 90, child: multiHomeWidget()),
           ],
         )
       ]),
@@ -25,13 +25,14 @@ class NadaHomeScreen extends StatelessWidget {
       floatingActionButton: Transform.scale(
         scale: 1.3,
         child: FloatingActionButton(
+          backgroundColor: Color(0xFFFBC02D),
           onPressed: () {},
           elevation: 5,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               Icon(
-                Icons.qr_code,
+                Icons.qr_code_rounded,
               ),
               Text('PAY')
             ],

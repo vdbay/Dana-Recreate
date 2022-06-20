@@ -7,42 +7,42 @@ class sendRecWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 180,
-        padding: const EdgeInsets.only(top: 20, left: 50, right: 50),
+        padding: const EdgeInsets.only(top: 20, left: 40, right: 40),
         color: Color(0xFFFBC02D),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Column(children: const [
               Icon(
-                Icons.qr_code_scanner,
-                size: 50,
+                Icons.qr_code_scanner_rounded,
+                size: 40,
                 color: Colors.white,
               ),
-              Text('Scan')
+              Text('Scan', style: TextStyle(color: Colors.white)),
             ]),
             Column(children: const [
               Icon(
-                Icons.account_balance_wallet,
-                size: 50,
+                Icons.account_balance_wallet_rounded,
+                size: 40,
                 color: Colors.white,
               ),
-              Text('Top up')
+              Text('Top up', style: TextStyle(color: Colors.white))
             ]),
             Column(children: const [
               Icon(
-                Icons.send,
-                size: 50,
+                Icons.call_made_rounded,
+                size: 40,
                 color: Colors.white,
               ),
-              Text('Send')
+              Text('Send', style: TextStyle(color: Colors.white))
             ]),
             Column(children: const [
               Icon(
-                Icons.reply,
-                size: 50,
+                Icons.call_received_rounded,
+                size: 40,
                 color: Colors.white,
               ),
-              Text('Request')
+              Text('Request', style: TextStyle(color: Colors.white))
             ])
           ],
         ));

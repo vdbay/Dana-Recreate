@@ -22,7 +22,7 @@ class bottomNavBar extends StatelessWidget {
                   children: [
                     IconButton(
                       icon: const Icon(
-                        Icons.android,
+                        Icons.android_rounded,
                       ),
                       onPressed: () {},
                     ),
@@ -37,7 +37,7 @@ class bottomNavBar extends StatelessWidget {
                   children: [
                     IconButton(
                       icon: const Icon(
-                        Icons.history,
+                        Icons.history_rounded,
                         color: Colors.grey,
                       ),
                       onPressed: () {},
@@ -56,7 +56,7 @@ class bottomNavBar extends StatelessWidget {
                   children: [
                     IconButton(
                       icon: const Icon(
-                        Icons.wallet,
+                        Icons.wallet_rounded,
                         color: Colors.grey,
                       ),
                       onPressed: () {},
@@ -72,7 +72,7 @@ class bottomNavBar extends StatelessWidget {
                   children: [
                     IconButton(
                       icon: const Icon(
-                        Icons.person,
+                        Icons.person_rounded,
                         color: Colors.grey,
                       ),
                       onPressed: () {},

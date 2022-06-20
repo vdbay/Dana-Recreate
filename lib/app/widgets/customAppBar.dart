@@ -52,7 +52,7 @@ class _customAppBarState extends State<customAppBar> {
               child: Container(
             alignment: Alignment.centerRight,
             child: const Icon(
-              Icons.mark_chat_unread,
+              Icons.mark_chat_unread_rounded,
               size: appBarHeight * 0.5,
             ),
           )),
@@ -60,7 +60,7 @@ class _customAppBarState extends State<customAppBar> {
       ),
       backgroundColor: widget.backgroundColor,
       leading: const Icon(
-        Icons.android,
+        Icons.android_rounded,
         size: appBarHeight * 0.5,
       ),
     );
