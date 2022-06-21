@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'boxWidget.dart';
 import 'pulsaDataWidget.dart';
+import 'feedWidget.dart';
 
 class multiHomeWidget extends StatelessWidget {
   const multiHomeWidget({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class multiHomeWidget extends StatelessWidget {
       ),
       boxWidget(
         height: 100,
-        child: Text('Recent Activity'),
+        child: feedWidget(),
       ),
       boxWidget(
         height: 100,
