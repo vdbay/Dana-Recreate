@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'boxWidget.dart';
 import 'pulsaDataWidget.dart';
 import 'feedWidget.dart';
+import 'homeScreenCarousel.dart';
 
 class multiHomeWidget extends StatelessWidget {
   const multiHomeWidget({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class multiHomeWidget extends StatelessWidget {
       ),
       boxWidget(
         height: 100,
-        child: Text('Carousel'),
+        child: homeScreenCarousel(),
       ),
       boxWidget(
         height: 100,

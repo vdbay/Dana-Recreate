@@ -26,7 +26,7 @@ class NadaHomeScreen extends StatelessWidget {
         floatingActionButton: Transform.scale(
           scale: 1.3,
           child: FloatingActionButton(
-            backgroundColor: Color(0xFFFBC02D),
+            backgroundColor: const Color(0xFFFBC02D),
             onPressed: () {},
             elevation: 5,
             child: Column(
