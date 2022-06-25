@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 class boxWidget extends StatelessWidget {
   final double height;
   final Widget child;
-  const boxWidget({Key? key, required this.height, required this.child})
+  final double widthSize;
+  const boxWidget(
+      {Key? key,
+      required this.height,
+      required this.child,
+      required this.widthSize})
       : super(key: key);
 
   @override
@@ -23,7 +28,7 @@ class boxWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         child: SizedBox(
           height: height,
-          width: mqSize.width * 0.95,
+          width: mqSize.width * widthSize,
           child: child,
         ),
       ),

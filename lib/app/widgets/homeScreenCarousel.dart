@@ -34,7 +34,7 @@ class homeScreenCarousel extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
             child: SizedBox(
               height: height,
-              width: mqSize.width * 0.95,
+              width: mqSize.width * 0.7,
               child: Center(
                   child: Container(
                 decoration: BoxDecoration(
